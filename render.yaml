@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: telegram-cert-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    pythonVersion: 3.10
